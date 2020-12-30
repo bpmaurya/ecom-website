@@ -1,18 +1,109 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--===============================================================================================-->
+  <link
+    rel="icon"
+    type="image/png"
+    href="{% static 'images/icons/favicon.png' %}"
+  />
+  <!--===============================================================================================-->
 
-    <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}"
+  />
+  <!--===============================================================================================-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'fonts/themify/themify-icons.css' %}"
+  />
+  <!--===============================================================================================-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}"
+  />
+  <!--===============================================================================================-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'fonts/elegant-font/html-css/style.css' %}"
+  />
+  <!--===============================================================================================-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'vendor/animate/animate.css' %}"
+  />
+  <!--===============================================================================================-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}"
+  />
+  <!--===============================================================================================-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'vendor/animsition/css/animsition.min.css' %}"
+  />
+  <!--===============================================================================================-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'vendor/select2/select2.min.css' %}"
+  />
+  <!--===============================================================================================-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'vendor/daterangepicker/daterangepicker.css' %}"
+  />
+  <!--===============================================================================================-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'vendor/slick/slick.css' %}"
+  />
+  <!--===============================================================================================-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'vendor/lightbox2/css/lightbox.min.css' %}"
+  />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <!--===============================================================================================-->
+
+ <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <title>{% block title%} {% endblock %}</title>
      <style>
        {% block css %} {% endblock %}
   </style>
-  </head>
+</head>
+
+
+   
+
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -54,7 +145,10 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 </button>
   </div>
 </nav>
-  {% block body %} {% endblock %}
+  {% block body %}
+  
+  
+   {% endblock %}
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -63,6 +157,122 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    
+{% load static %}
+<!-- ------------------------------footer sub end---------------------------------- -->
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Abel|Lato|Open+Sans&display=swap" rel="stylesheet">
+<style>
+  
+    /* footer */
+  #footer-main{
+    margin-top:24px;
+	background: #000;
+	color: white;
+	font-size: 0.8rem;
+	padding: 2.5rem 0;
+  font-family: 'Lato', sans-serif;
+}
+
+#footer-main a{
+	font-size: 14px;
+	display: block;
+	margin: 0.3rem;
+	color: grey;
+}
+
+#footer-main a:hover{
+	font-weight: bold;
+	color: white;
+}
+
+#footer-main h6 a{
+    color: white;
+
+    
+}
+
+
+
+#footer-main hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid white;
+}
+
+#footer-main img{
+	margin-right: 0.6rem;
+}
+</style>
+
+<footer id="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+            <br>
+
+            <h6 class="mt-3"><a href="">FIND A STORE</a></h6>
+            <h6 class="mt-3"><a href="">SIGN UP FOR EMAIL</a></h6>
+            <h6 class="mt-3"><a href="">BECOME A MEMBER</h6>
+            
+            <h6 class="mt-3"><a href="/admin/">ADMIN LOGIN</a></h6>
+           
+        </div>
+        <div class="col-sm-3">
+            <h6 class="mt-3"><a href="">GET HELP</a></h6>
+            <a href="">Order Status</a>
+            <a href="">Shipping and Delivery</a>
+            <a href="">Returns</a>
+            <a href="">Payment Options</a>
+            <a href="">Contact Us</a>
+        </div>
+        <div class="col-sm-3">
+            <h6 class="mt-3"><a href="">ABOUT DJANGO</a></h6>
+            <a href="">News</a>
+            <a href="">Careers</a>
+            <a href="">Investors</a>
+            <a href="">Sustainability</a>
+
+
+
+        </div>
+        <div class="col-sm-3">
+          <a href="">Voice of Customer</a>
+          <a href="">Contacts by Branch</a>
+          <a href="">Ethics Reporting</a>
+          <a href="">Careers</a>
+
+          <br><br>
+          <a href="">Business Inquiry</a>
+          <br>
+          <a href="" class="ico"><i class="fab fa-apple fa-2x"></i> Apple Store</a>
+          <a href="" class="ico"><i class="fab fa-google-play fa-2x"></i> Google Play</a>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-6">
+          
+        </div>
+        <div class="col-sm-6">
+          
+        </div>
+        <hr>
+        <a href="https://github.com/bpmaurya" style="margin-left: 1rem">Privacy Policy | @bpmaurya 2020-2021</a>
+      </div>
+    </div>
+  </footer>
+<!-- ------------------------------footer end---------------------------------- -->
+
+
+
+
+    
+    
     {% block js %} {% endblock %}
+
+  
   </body>
 </html>
