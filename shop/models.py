@@ -1,6 +1,23 @@
 from django.db import models
-
+from django.db.models import Sum
+from django.shortcuts import reverse
+from django.conf import settings
 # Create your models here.
+
+
+
+class Slide(models.Model):
+    caption1 = models.CharField(max_length=100)
+    caption2 = models.CharField(max_length=100)
+    link = models.CharField(max_length=100)
+    image = models.ImageField(help_text="Size: 1920x570")
+    is_active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return "{} - {}".format(self.caption1, self.caption2)
+
+
+
 class Product(models.Model):
     product_id = models.AutoField
     product_name = models.CharField(max_length=50)

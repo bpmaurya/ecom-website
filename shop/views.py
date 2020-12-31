@@ -3,6 +3,7 @@ from .models import Product, Contact, Orders, OrderUpdate
 from math import ceil
 import json
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.decorators import login_required
 from PayTm import Checksum
 # Create your views here.
 from django.http import HttpResponse
@@ -62,7 +63,7 @@ def contact(request):
         thank = True
     return render(request, 'shop/contact.html', {'thank': thank})
 
-
+@login_required
 def tracker(request):
     if request.method=="POST":
         orderId = request.POST.get('orderId', '')
@@ -98,6 +99,7 @@ def productView(request, myid):
     return render(request, 'shop/prodView.html', {'product':product[0]})
 
 
+@login_required
 def checkout(request):
     if request.method=="POST":
         items_json = request.POST.get('itemsJson', '')
