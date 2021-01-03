@@ -208,6 +208,7 @@ if (localStorage.getItem('cart') == null) {
       qty = cart[idstr][0]+1;
 
         cart[idstr] = [qty,name];
+      
     } else {
         qty = 1;
         cart[idstr] = 1;
@@ -232,10 +233,11 @@ function updatePopover()
         popStr = popStr +"<b>" + i +"</b>. ";
         popStr = popStr+ document.getElementById('name'+item).innerHTML.slice(0,19) + " ..Qty: "+ cart[item][0] +'<br>';
         i = i + 1;
+        
     }
 
 
-    popStr = popStr +"</div> <a href='/shop/checkout'><button class='btn btn-primary' id='checkout'>checkout</button></a><button class='btn btn-primary'  onclick='clearCart()' id='clearCart'>clearCart</button>"
+    popStr = popStr +"</div> <a href='/shop/checkout' ><button  class='btn btn-primary' id='checkout'>checkout</button></a><button class='btn btn-primary'  onclick='clearCart()' id='clearCart'>clearCart</button>"
     document.getElementById('popcart').setAttribute('data-content',popStr);
     $('#popcart').popover('show');
 }
@@ -287,5 +289,13 @@ $('.divpr').on("click", "button.plus", function() {
 });
 
 
+{% comment %} $('#checkout').click(function(){
+    if (localStorage.getItem('cart') != null) {
+           window.location.href='/shop/checkout';
+    }
+    else{
+        window.location.href = '/shop';
+    }
+}); {% endcomment %}
 </script>
 {% endblock %}
