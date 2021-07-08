@@ -1,3 +1,23 @@
+
+#homepage
+![image](https://user-images.githubusercontent.com/61457302/124947348-60603500-e02d-11eb-8820-e2cef893c8ab.png)
+#productpage
+![image](https://user-images.githubusercontent.com/61457302/124947476-7c63d680-e02d-11eb-81c6-af830081a46c.png)
+
+#Blog List page
+![image](https://user-images.githubusercontent.com/61457302/124947576-930a2d80-e02d-11eb-98f3-a72277127f0f.png)
+
+#single blog page
+![image](https://user-images.githubusercontent.com/61457302/124947633-a0bfb300-e02d-11eb-8424-f3844f43d1c2.png)
+
+#sign in page
+![image](https://user-images.githubusercontent.com/61457302/124947756-c0ef7200-e02d-11eb-9c40-95f0b53fb9bc.png)
+#signup page
+![image](https://user-images.githubusercontent.com/61457302/124947873-d795c900-e02d-11eb-9bc1-14f5ff3cd97f.png)
+
+#contact us page
+![image](https://user-images.githubusercontent.com/61457302/124947978-ed0af300-e02d-11eb-8a4e-c00307649007.png)
+
 # ecom-website
 This is blog websites using django framework
 # django
