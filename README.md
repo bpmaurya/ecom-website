@@ -4,6 +4,16 @@
 #productpage
 ![image](https://user-images.githubusercontent.com/61457302/124947476-7c63d680-e02d-11eb-81c6-af830081a46c.png)
 
+# check out page
+![image](https://user-images.githubusercontent.com/61457302/125052355-80d9cf00-e0c1-11eb-8fbb-ef69c9beece4.png)
+
+# tracker
+![image](https://user-images.githubusercontent.com/61457302/125052532-b1216d80-e0c1-11eb-99ed-f5afb052d9f9.png)
+
+# also search options
+![image](https://user-images.githubusercontent.com/61457302/125052670-d9a96780-e0c1-11eb-9b88-d1de0ee83d90.png)
+
+
 #Blog List page
 ![image](https://user-images.githubusercontent.com/61457302/124947576-930a2d80-e02d-11eb-98f3-a72277127f0f.png)
 
